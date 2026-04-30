@@ -5,256 +5,390 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jayce P. Lesis — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <a href="#home" class="nav-logo">JPL</a>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Work</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta">Hire Me</a>
-</nav>
-
 <main>
 
-<!-- HOME -->
-<section id="home">
-  <div class="home-inner">
-    <div class="home-text">
-      <p class="eyebrow">Available for opportunities</p>
-      <h1>
-        <span class="name-first">Jayce P.</span>
-        <span class="name-last"><em>Lesis</em></span>
-      </h1>
-      <p class="home-role"><span id="typed"></span><span class="cursor">|</span></p>
-      <p class="home-desc">BS Information Technology student bridging technical knowledge and creative design to build user-centered digital experiences.</p>
-      <div class="home-actions">
-        <a href="#projects" class="btn-primary">View Work</a>
-        <a href="#contact" class="btn-line">Get in Touch</a>
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-info">
+      <figure class="avatar-box">
+        <img src="Image/25b641e4-b00a-4f66-8f57-a5a3451a2268-removebg-preview.png" alt="Jayce P. Lesis" width="80">
+      </figure>
+      <div class="info-content">
+        <h1 class="name">Jayce P. Lesis</h1>
+        <p class="title">UI/UX Designer</p>
       </div>
+      <button class="info-more-btn" id="sidebarToggle">
+        <span>Show Contacts</span>
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
     </div>
-    <div class="home-right">
-      <div class="photo-wrap">
-        <div class="photo-img">
-          <img src="Image/25b641e4-b00a-4f66-8f57-a5a3451a2268-removebg-preview.png" alt="Jayce P. Lesis">
-        </div>
-      </div>
-      <div class="home-stats">
-        <div class="stat">
-          <span class="stat-n">2+</span>
-          <span class="stat-l">Projects</span>
-        </div>
-        <div class="stat-div"></div>
-        <div class="stat">
-          <span class="stat-n">3rd</span>
-          <span class="stat-l">Year IT</span>
-        </div>
-        <div class="stat-div"></div>
-        <div class="stat">
-          <span class="stat-n">Open</span>
-          <span class="stat-l">To Collabs</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-inner two-col">
-    <div class="col-left reveal">
-      <p class="tag">About</p>
-      <h2>Who I <em>Am</em></h2>
-      <p class="body-text">I'm <strong>Jayce P. Lesis</strong>, a BS Information Technology student who believes great design should feel effortless — where technology meets simplicity to create meaningful user experiences.</p>
-      <p class="body-text">Currently honing my skills in UI/UX design, user research, and interaction design — always eager to learn, grow, and collaborate on impactful projects.</p>
-      <a href="#contact" class="btn-primary" style="margin-top:2rem;display:inline-block">Contact Me</a>
-    </div>
-    <div class="col-right reveal" style="transition-delay:.12s">
-      <div class="info-list">
-        <div class="info-row"><span class="info-k">Name</span><span class="info-v">Jayce P. Lesis</span></div>
-        <div class="info-row"><span class="info-k">Study</span><span class="info-v">3rd Year IT Student</span></div>
-        <div class="info-row"><span class="info-k">Focus</span><span class="info-v">Software Engineer</span></div>
-        <div class="info-row"><span class="info-k">Status</span><span class="info-v open">Open to Collabs ✦</span></div>
-      </div>
-      <div class="skill-bars">
-        <p class="bars-label">Proficiency</p>
-        <div class="bar-row"><span>UI Design</span><span class="bar-pct">85%</span><div class="track"><div class="fill" data-pct="85"></div></div></div>
-        <div class="bar-row"><span>UX Research</span><span class="bar-pct">75%</span><div class="track"><div class="fill" data-pct="75"></div></div></div>
-        <div class="bar-row"><span>Frontend Dev</span><span class="bar-pct">80%</span><div class="track"><div class="fill" data-pct="80"></div></div></div>
-        <div class="bar-row"><span>Figma</span><span class="bar-pct">82%</span><div class="track"><div class="fill" data-pct="82"></div></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-inner">
-    <div class="sec-head reveal">
-      <p class="tag">Capabilities</p>
-      <h2>My <em>Skills</em></h2>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card reveal">
-        <div class="sk-icon">✦</div>
-        <h3>UI Design</h3>
-        <p>Crafting clean, visually compelling interfaces with strong attention to spacing, color, and hierarchy.</p>
-      </div>
-      <div class="skill-card reveal" style="transition-delay:.08s">
-        <div class="sk-icon">◎</div>
-        <h3>UX Research</h3>
-        <p>Understanding users through research methods to design solutions grounded in real needs.</p>
-      </div>
-      <div class="skill-card reveal" style="transition-delay:.16s">
-        <div class="sk-icon">⌗</div>
-        <h3>Frontend Dev</h3>
-        <p>Building responsive, interactive web experiences with HTML, CSS, and JavaScript.</p>
-      </div>
-      <div class="skill-card reveal" style="transition-delay:.24s">
-        <div class="sk-icon">◈</div>
-        <h3>Prototyping</h3>
-        <p>Rapidly turning ideas into interactive prototypes to test and validate concepts early.</p>
-      </div>
-    </div>
-    <div class="tools reveal">
-      <p class="tag" style="margin-bottom:1.2rem">Tools & Software</p>
-      <div class="pills">
-        <span>Figma</span><span>Canva</span><span>HTML / CSS</span>
-        <span>JavaScript</span><span>Prototyping</span>
-        <span>User Research</span><span>Wireframing</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-inner">
-    <div class="sec-head reveal">
-      <p class="tag">Work</p>
-      <h2>Selected <em>Projects</em></h2>
-    </div>
-    <div class="proj-grid">
-      <div class="proj-card reveal">
-        <div class="proj-thumb t1">
-          <img src="project1.png" alt="CRUD Project" onerror="this.style.display='none'">
-          <span class="proj-emoji">🗄️</span>
-        </div>
-        <div class="proj-body">
-          <div class="proj-meta">
-            <span class="proj-cat">CRUD Application</span>
-            <span class="proj-yr">2026</span>
+    <div class="sidebar-info-more" id="sidebarMore">
+      <div class="separator"></div>
+      <ul class="contacts-list">
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+            <a href="mailto:jaycelesis.gnc@gmail.com" class="contact-link">jaycelesis.gnc@gmail.com</a>
           </div>
-          <h3>School Project</h3>
-          <p>A foundational CRUD application demonstrating core data management concepts.</p>
-          <a class="proj-link">View Details →</a>
-        </div>
-      </div>
-      <div class="proj-card reveal" style="transition-delay:.1s">
-        <div class="proj-thumb t2">
-          <img src="Image/download (1).jpeg" alt="MedSystem" onerror="this.style.display='none'">
-          <span class="proj-emoji">🏥</span>
-        </div>
-        <div class="proj-body">
-          <div class="proj-meta">
-            <span class="proj-cat">Hospital Management</span>
-            <span class="proj-yr">2026</span>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+            <address>Philippines</address>
           </div>
-          <h3>MedSystem</h3>
-          <p>A patient-focused platform enabling online appointment scheduling for remote access.</p>
-          <a class="proj-link">View Details →</a>
+        </li>
+        <li class="contact-item">
+          <div class="icon-box"><ion-icon name="school-outline"></ion-icon></div>
+          <div class="contact-info">
+            <p class="contact-title">Status</p>
+            <span class="contact-link">3rd Year IT Student</span>
+          </div>
+        </li>
+      </ul>
+      <div class="separator"></div>
+      <ul class="social-list">
+        <li class="social-item"><a href="https://facebook.com/jaysiiii13" target="_blank" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li class="social-item"><a href="https://instagram.com/jaysiii_les" target="_blank" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li class="social-item"><a href="mailto:jaycelesis.gnc@gmail.com" class="social-link"><ion-icon name="mail-outline"></ion-icon></a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><button class="navbar-link active" data-tab="about">About</button></li>
+        <li><button class="navbar-link" data-tab="resume">Resume</button></li>
+        <li><button class="navbar-link" data-tab="portfolio">Portfolio</button></li>
+        <li><button class="navbar-link" data-tab="badges">Badges</button></li>
+        <li><button class="navbar-link" data-tab="contact">Contact</button></li>
+      </ul>
+    </nav>
+
+    <!-- ABOUT -->
+    <article class="tab-content active" id="tab-about">
+      <header class="article-title"><h2>About Me</h2></header>
+      <section class="about-text">
+        <p>I'm <strong>Jayce P. Lesis</strong>, a BS Information Technology student who believes great design should feel effortless — where technology meets simplicity to create meaningful user experiences.</p>
+        <p>Currently honing my skills in UI/UX design, user research, and interaction design — always eager to learn, grow, and collaborate on impactful projects.</p>
+      </section>
+      <section class="service">
+        <h3 class="h3 service-title">What I'm Doing</h3>
+        <ul class="service-list">
+          <li class="service-item">
+            <div class="service-icon-box"><ion-icon name="color-palette-outline"></ion-icon></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">UI Design</h4>
+              <p class="service-item-text">Crafting clean, visually compelling interfaces with strong attention to spacing, color, and hierarchy.</p>
+            </div>
+          </li>
+          <li class="service-item">
+            <div class="service-icon-box"><ion-icon name="people-outline"></ion-icon></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">UX Research</h4>
+              <p class="service-item-text">Understanding users through research methods to design solutions grounded in real needs.</p>
+            </div>
+          </li>
+          <li class="service-item">
+            <div class="service-icon-box"><ion-icon name="code-slash-outline"></ion-icon></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Frontend Dev</h4>
+              <p class="service-item-text">Building responsive, interactive web experiences with HTML, CSS, and JavaScript.</p>
+            </div>
+          </li>
+          <li class="service-item">
+            <div class="service-icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+            <div class="service-content-box">
+              <h4 class="h4 service-item-title">Prototyping</h4>
+              <p class="service-item-text">Rapidly turning ideas into interactive prototypes to test and validate concepts early.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </article>
+
+    <!-- RESUME -->
+    <article class="tab-content" id="tab-resume">
+      <header class="article-title"><h2>Resume</h2></header>
+      <section class="timeline">
+        <div class="title-wrapper">
+          <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+          <h3 class="h3">Education</h3>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">BS Information Technology</h4>
+            <span>2022 — Present</span>
+            <p class="timeline-text">Currently in 3rd year, focusing on software engineering, UI/UX design, and web development.</p>
+          </li>
+        </ol>
+      </section>
+      <section class="skill">
+        <h3 class="h3 skills-title">My Skills</h3>
+        <ul class="skills-list">
+          <li class="skills-item">
+            <div class="title-wrapper"><h5 class="h5">UI Design</h5><data value="85">85%</data></div>
+            <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:85%"></div></div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper"><h5 class="h5">UX Research</h5><data value="75">75%</data></div>
+            <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:75%"></div></div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper"><h5 class="h5">Frontend Dev</h5><data value="80">80%</data></div>
+            <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:80%"></div></div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper"><h5 class="h5">Figma</h5><data value="82">82%</data></div>
+            <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:82%"></div></div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper"><h5 class="h5">HTML / CSS</h5><data value="88">88%</data></div>
+            <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:88%"></div></div>
+          </li>
+          <li class="skills-item">
+            <div class="title-wrapper"><h5 class="h5">JavaScript</h5><data value="70">70%</data></div>
+            <div class="skill-progress-bg"><div class="skill-progress-fill" style="width:70%"></div></div>
+          </li>
+        </ul>
+      </section>
+    </article>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-inner two-col">
-    <div class="col-left reveal">
-      <p class="tag">Contact</p>
-      <h2>Let's <em>Connect</em></h2>
-      <p class="body-text">Open to feedback, collaborations, and opportunities. Feel free to reach out — I'd love to hear from you.</p>
-      <div class="contact-items">
-        <a class="c-item" href="mailto:jaycelesis.gnc@gmail.com">
-          <span class="c-ico">✉</span>
-          <div><p class="c-k">Email</p><p class="c-v">jaycelesis.gnc@gmail.com</p></div>
-        </a>
-        <a class="c-item" href="https://facebook.com/jaysiiii13" target="_blank">
-          <span class="c-ico">f</span>
-          <div><p class="c-k">Facebook</p><p class="c-v">facebook.com/jaysiiii13</p></div>
-        </a>
-        <a class="c-item" href="https://instagram.com/jaysiii_les" target="_blank">
-          <span class="c-ico">◉</span>
-          <div><p class="c-k">Instagram</p><p class="c-v">@jaysiii_les</p></div>
-        </a>
-      </div>
-    </div>
-    <form class="contact-form reveal" style="transition-delay:.12s">
-      <div class="f-group">
-        <label>Name</label>
-        <input type="text" placeholder="Your name">
-      </div>
-      <div class="f-group">
-        <label>Email</label>
-        <input type="email" placeholder="your@email.com">
-      </div>
-      <div class="f-group">
-        <label>Message</label>
-        <textarea placeholder="Your message..."></textarea>
-      </div>
-      <button type="submit" class="btn-primary">Send Message</button>
-    </form>
-  </div>
-</section>
+    <!-- PORTFOLIO -->
+    <article class="tab-content" id="tab-portfolio">
+      <header class="article-title"><h2>Portfolio</h2></header>
+      <ul class="project-list">
+        <li class="project-item">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <div class="project-placeholder t1"><span></span></div>
+            </figure>
+            <h3 class="project-title">CRUD Project</h3>
+            <p class="project-category">CRUD Application · 2026</p>
+          </a>
+        </li>
+        <li class="project-item">
+          <a href="#">
+            <figure class="project-img">
+              <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <img src="Image/download (1).jpeg" alt="MedSystem" loading="lazy" onerror="this.style.display='none'">
+              <div class="project-placeholder t2"><span></span></div>
+            </figure>
+            <h3 class="project-title">MedSystem</h3>
+            <p class="project-category">Hospital Management · 2026</p>
+          </a>
+        </li>
+      </ul>
+    </article>
 
+    <!-- BADGES & CERTIFICATES -->
+    <article class="tab-content" id="tab-badges">
+      <header class="article-title"><h2>Badges &amp; Certificates</h2></header>
+
+      <!-- BADGES -->
+      <section class="badges-section">
+        <h3 class="h3 section-label">Digital Badges</h3>
+        <ul class="badges-list">
+
+          <li class="badge-card" data-img="Image/Screenshot 2026-04-30 163324.png" title="Click to view certificate">
+            <div class="badge-img-wrap">
+              <img
+                src="Image/badge-networking.png"
+                alt="IT Specialist: Networking"
+                onerror="this.src='https://images.credly.com/size/340x340/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png'"
+              >
+            </div>
+            <div class="badge-info">
+              <h4 class="badge-title">IT Specialist: Networking</h4>
+              <p class="badge-issuer">Pearson / Certiport</p>
+              <span class="badge-tag specialist">◈ Specialist</span>
+            </div>
+            <span class="badge-click-hint"><ion-icon name="image-outline"></ion-icon> View Certificate</span>
+          </li>
+
+          <li class="badge-card" data-img="Image/Screenshot 2026-04-30 163413.png" title="Click to view certificate">
+            <div class="badge-img-wrap">
+              <img
+                src="Image/badge-2.png"
+                alt="Your Second Badge"
+                onerror="this.src='https://images.credly.com/size/340x340/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/image.png'"
+              >
+            </div>
+            <div class="badge-info">
+              <h4 class="badge-title">Your Second Badge</h4>
+              <p class="badge-issuer">Issuer Name Here</p>
+              <span class="badge-tag verified">✔ Verified</span>
+            </div>
+            <span class="badge-click-hint"><ion-icon name="image-outline"></ion-icon> View Certificate</span>
+          </li>
+
+        </ul>
+      </section>
+
+      <div class="separator"></div>
+
+      <!-- CERTIFICATES -->
+      <section class="certs-section">
+        <h3 class="h3 section-label">Certificates</h3>
+        <ul class="certs-list">
+
+          <li class="cert-card">
+            <div class="cert-left">
+              <div class="cert-icon"><ion-icon name="ribbon-outline"></ion-icon></div>
+            </div>
+            <div class="cert-body">
+              <h4 class="cert-title">IT Specialist: Networking</h4>
+              <p class="cert-issuer">Pearson / Certiport</p>
+              <span class="cert-date">Issued January 27, 2026</span>
+            </div>
+            <button class="cert-view-btn" data-img="Image/Screenshot 2026-04-30 163324.png" title="View Certificate">
+              <ion-icon name="open-outline"></ion-icon>
+            </button>
+          </li>
+
+          <li class="cert-card">
+            <div class="cert-left">
+              <div class="cert-icon"><ion-icon name="ribbon-outline"></ion-icon></div>
+            </div>
+            <div class="cert-body">
+              <h4 class="cert-title">Your Second Certificate</h4>
+              <p class="cert-issuer">Issuer Name Here</p>
+              <span class="cert-date">Issued 2025</span>
+            </div>
+            <button class="cert-view-btn" data-img="Image/Screenshot 2026-04-30 163413.png" title="View Certificate">
+              <ion-icon name="open-outline"></ion-icon>
+            </button>
+          </li>
+
+        </ul>
+      </section>
+    </article>
+
+    <!-- CONTACT -->
+    <article class="tab-content" id="tab-contact">
+      <header class="article-title"><h2>Contact</h2></header>
+      <section class="mapbox">
+        <figure>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990700.3296870885!2d120.45903!3d15.4755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca5fd6ac5a87%3A0xe182fa4c52e1e5f6!2sCentral%20Luzon!5e0!3m2!1sen!2sph!4v1680000000" width="400" height="300" loading="lazy"></iframe>
+        </figure>
+      </section>
+      <section class="contact-form">
+        <h3 class="h3 form-title">Contact Form</h3>
+        <form class="form" novalidate>
+          <div class="input-wrapper">
+            <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+            <input type="email" name="email" class="form-input" placeholder="Email address" required>
+          </div>
+          <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+          <button class="form-btn" type="submit">
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>Send Message</span>
+          </button>
+        </form>
+      </section>
+    </article>
+
+  </div>
 </main>
 
-<footer>
-  <p>© 2026 <span>Jayce P. Lesis</span></p>
-  <p>Crafted with <span>♥</span> intention.</p>
-</footer>
+<!-- IMAGE MODAL -->
+<div class="pdf-modal-overlay" id="certModal">
+  <div class="pdf-modal">
+    <div class="pdf-modal-header">
+      <h3 class="pdf-modal-title" id="certModalTitle">Certificate</h3>
+      <div class="pdf-modal-actions">
+        <a class="pdf-download-btn" id="certDownloadBtn" download title="Download">
+          <ion-icon name="download-outline"></ion-icon> Download
+        </a>
+        <button class="pdf-close-btn" id="certClose" title="Close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </div>
+    <div class="pdf-modal-body cert-img-body">
+      <img id="certImg" src="" alt="Certificate" />
+    </div>
+  </div>
+</div>
 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script>
-// Scroll reveal
-const obs = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting) e.target.classList.add("vis") }), {threshold: 0.08});
-document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
-
-// Active nav
-const secs = document.querySelectorAll("section[id]");
-const navAs = document.querySelectorAll(".nav-links a");
-window.addEventListener("scroll", () => {
-  let cur = "";
-  secs.forEach(s => { if(window.scrollY >= s.offsetTop - 120) cur = s.id; });
-  navAs.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + cur));
+// Tab navigation
+const navLinks = document.querySelectorAll('.navbar-link');
+const tabContents = document.querySelectorAll('.tab-content');
+navLinks.forEach(btn => {
+  btn.addEventListener('click', () => {
+    navLinks.forEach(l => l.classList.remove('active'));
+    tabContents.forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
 });
 
-// Typed
-const roles = ["UI/UX Designer", "Frontend Developer", "Creative Thinker", "IT Student"];
-let ri=0,ci=0,del=false;
-const typed = document.getElementById("typed");
-function type() {
-  const w = roles[ri];
-  if(!del){ typed.textContent=w.slice(0,++ci); if(ci===w.length){del=true;setTimeout(type,1500);return;} }
-  else { typed.textContent=w.slice(0,--ci); if(ci===0){del=false;ri=(ri+1)%roles.length;} }
-  setTimeout(type, del?50:90);
-}
-type();
+// Sidebar toggle
+const toggle = document.getElementById('sidebarToggle');
+const more = document.getElementById('sidebarMore');
+toggle.addEventListener('click', () => {
+  const open = more.classList.toggle('active');
+  toggle.querySelector('span').textContent = open ? 'Hide Contacts' : 'Show Contacts';
+  toggle.querySelector('ion-icon').style.transform = open ? 'rotate(180deg)' : '';
+});
 
-// Skill bars
-const bObs = new IntersectionObserver(es => {
-  es.forEach(e => { if(e.isIntersecting) e.target.querySelectorAll(".fill").forEach(b => b.style.width = b.dataset.pct+"%"); });
-}, {threshold:.2});
-document.querySelectorAll(".skill-bars").forEach(el => bObs.observe(el));
+// Image Modal
+const modal      = document.getElementById('certModal');
+const certImg    = document.getElementById('certImg');
+const dlBtn      = document.getElementById('certDownloadBtn');
+const closeBtn   = document.getElementById('certClose');
+const modalTitle = document.getElementById('certModalTitle');
+
+function openCert(imgSrc, title) {
+  certImg.src = imgSrc;
+  dlBtn.href = imgSrc;
+  modalTitle.textContent = title || 'Certificate';
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeCert() {
+  modal.classList.remove('active');
+  certImg.src = '';
+  document.body.style.overflow = '';
+}
+
+// Badge cards click
+document.querySelectorAll('.badge-card[data-img]').forEach(card => {
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', () => {
+    const title = card.querySelector('.badge-title')?.textContent;
+    openCert(card.dataset.img, title);
+  });
+});
+
+// Cert view buttons click
+document.querySelectorAll('.cert-view-btn[data-img]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.cert-card');
+    const title = card.querySelector('.cert-title')?.textContent;
+    openCert(btn.dataset.img, title);
+  });
+});
+
+// Close modal
+closeBtn.addEventListener('click', closeCert);
+modal.addEventListener('click', e => { if (e.target === modal) closeCert(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCert(); });
 </script>
 </body>
 </html>
